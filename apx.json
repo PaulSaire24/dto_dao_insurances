@@ -1,0 +1,12 @@
+{
+    "component": "r2artifact",
+    "repoName": "dto_dao_insurances",
+    "uuaa": "pisd",
+    "slave_label": "apx",
+    "extra_properties": null,
+    "apxrepoBranch": "master",
+    "componentPaaSId": "dto_dao_insurances",
+    "appPaaSId": "pisd",
+    "proyectPaaSId": "pe.pisd.app-id-26197.dsg",
+    "resource_type": "dto"
+}
