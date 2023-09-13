@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class SimulationEntity  {
+    private SimulationEntity() {}
     private BigDecimal insuranceSimulationId ;
     private String insrncCompanySimulationId ;
     private String customerId                ;
