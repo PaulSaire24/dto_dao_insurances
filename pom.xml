@@ -14,6 +14,10 @@
 	<description>Deployment unit dto_dao_insurances of uuaa pisd</description>
 	<properties>
 		<osgi.version.manifest>0.0</osgi.version.manifest>
+		<sonar.coverage.exclusions>
+			/src/main/java/com/bbva/pisd/dto/insurancedao/entities/**.java,
+			/src/main/java/com/bbva/pisd/dto/insurancedao/operation/**.java
+		</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
