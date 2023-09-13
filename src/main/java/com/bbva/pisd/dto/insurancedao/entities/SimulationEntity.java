@@ -38,260 +38,178 @@ public class SimulationEntity  {
         }
 
         public SimulationEntityBuilder withInsuranceSimulationId(BigDecimal insuranceSimulationId){
-            this.simulationEntity.setInsuranceSimulationId(insuranceSimulationId);
+            this.simulationEntity.insuranceSimulationId=insuranceSimulationId;
             return this;
         }
 
         public SimulationEntityBuilder withInsrncCompanySimulationId(String insrncCompanySimulationId){
-            this.simulationEntity.setInsrncCompanySimulationId(insrncCompanySimulationId);
+            this.simulationEntity.insrncCompanySimulationId=insrncCompanySimulationId;
             return this;
         }
 
         public SimulationEntityBuilder withCustomerId(String customerId){
-            this.simulationEntity.setCustomerId(customerId);
+            this.simulationEntity.customerId=customerId;
             return this;
         }
 
         public SimulationEntityBuilder withCustomerSimulationDate(String customerSimulationDate){
-            this.simulationEntity.setCustomerSimulationDate(customerSimulationDate);
+            this.simulationEntity.customerSimulationDate=customerSimulationDate;
             return this;
         }
 
         public SimulationEntityBuilder withCustSimulationExpiredDate(String custSimulationExpiredDate){
-            this.simulationEntity.setCustSimulationExpiredDate(custSimulationExpiredDate);
+            this.simulationEntity.custSimulationExpiredDate=custSimulationExpiredDate;
             return this;
         }
 
         public SimulationEntityBuilder withBankFactorType(String bankFactorType){
-            this.simulationEntity.setBankFactorType(bankFactorType);
+            this.simulationEntity.bankFactorType=bankFactorType;
             return this;
         }
         public SimulationEntityBuilder withBankFactorAmount(BigDecimal bankFactorAmount){
-            this.simulationEntity.setBankFactorAmount(bankFactorAmount);
+            this.simulationEntity.bankFactorAmount=bankFactorAmount;
             return this;
         }
         public SimulationEntityBuilder withBankFactorPer(BigDecimal bankFactorPer){
-            this.simulationEntity.setBankFactorPer(bankFactorPer);
+            this.simulationEntity.bankFactorPer=bankFactorPer;
             return this;
         }
 
         public SimulationEntityBuilder withRegistrySituationType(String registrySituationType){
-            this.simulationEntity.setRegistrySituationType(registrySituationType);
+            this.simulationEntity.registrySituationType=registrySituationType;
             return this;
         }
 
         public SimulationEntityBuilder withSourceBranchId(String sourceBranchId){
-            this.simulationEntity.setSourceBranchId(sourceBranchId);
+            this.simulationEntity.sourceBranchId=sourceBranchId;
             return this;
         }
         public SimulationEntityBuilder withCreationUserId(String creationUserId){
-            this.simulationEntity.setCreationUserId(creationUserId);
+            this.simulationEntity.creationUserId=creationUserId;
             return this;
         }
         public SimulationEntityBuilder withCreationDate(Date creationDate){
-            this.simulationEntity.setCreationDate(creationDate);
+            this.simulationEntity.creationDate=creationDate;
             return this;
         }
 
         public SimulationEntityBuilder withUserAuditId(String userAuditId){
-            this.simulationEntity.setUserAuditId(userAuditId);
+            this.simulationEntity.userAuditId=userAuditId;
             return this;
         }
         public SimulationEntityBuilder withAuditDate(Date auditDate){
-            this.simulationEntity.setAuditDate(auditDate);
+            this.simulationEntity.auditDate=auditDate;
             return this;
         }
         public SimulationEntityBuilder withPersonalDocType(String personalDocType){
-            this.simulationEntity.setPersonalDocType(personalDocType);
+            this.simulationEntity.personalDocType=personalDocType;
             return this;
         }
         public SimulationEntityBuilder withParticipantPersonalId(String participantPersonalId){
-            this.simulationEntity.setParticipantPersonalId(participantPersonalId);
+            this.simulationEntity.participantPersonalId=participantPersonalId;
             return this;
         }
         public SimulationEntityBuilder withInsuredCustomerName(String insuredCustomerName){
-            this.simulationEntity.setInsuredCustomerName(insuredCustomerName);
+            this.simulationEntity.insuredCustomerName=insuredCustomerName;
             return this;
         }
         public SimulationEntityBuilder withClientLastName(String clientLastName){
-            this.simulationEntity.setClientLastName(clientLastName);
+            this.simulationEntity.clientLastName=clientLastName;
             return this;
         }
         public SimulationEntityBuilder withDataTreatmentIndType(String dataTreatmentIndType){
-            this.simulationEntity.setDataTreatmentIndType(dataTreatmentIndType);
+            this.simulationEntity.dataTreatmentIndType=dataTreatmentIndType;
             return this;
         }
         public SimulationEntityBuilder withCustomerSegmentName(String customerSegmentName){
-            this.simulationEntity.setCustomerSegmentName(customerSegmentName);
+            this.simulationEntity.customerSegmentName=customerSegmentName;
             return this;
         }
-
 
         public SimulationEntity build(){
             return this.simulationEntity;
         }
 
     }
-
-
     public BigDecimal getInsuranceSimulationId() {
         return insuranceSimulationId;
-    }
-
-    public void setInsuranceSimulationId(BigDecimal insuranceSimulationId) {
-        this.insuranceSimulationId = insuranceSimulationId;
     }
 
     public String getInsrncCompanySimulationId() {
         return insrncCompanySimulationId;
     }
 
-    public void setInsrncCompanySimulationId(String insrncCompanySimulationId) {
-        this.insrncCompanySimulationId = insrncCompanySimulationId;
-    }
-
     public String getCustomerId() {
         return customerId;
-    }
-
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
     }
 
     public String getCustomerSimulationDate() {
         return customerSimulationDate;
     }
 
-    public void setCustomerSimulationDate(String customerSimulationDate) {
-        this.customerSimulationDate = customerSimulationDate;
-    }
-
     public String getCustSimulationExpiredDate() {
         return custSimulationExpiredDate;
     }
 
-    public void setCustSimulationExpiredDate(String custSimulationExpiredDate) {
-        this.custSimulationExpiredDate = custSimulationExpiredDate;
-    }
 
     public String getBankFactorType() {
         return bankFactorType;
-    }
-
-    public void setBankFactorType(String bankFactorType) {
-        this.bankFactorType = bankFactorType;
     }
 
     public BigDecimal getBankFactorAmount() {
         return bankFactorAmount;
     }
 
-    public void setBankFactorAmount(BigDecimal bankFactorAmount) {
-        this.bankFactorAmount = bankFactorAmount;
-    }
-
     public BigDecimal getBankFactorPer() {
         return bankFactorPer;
-    }
-
-    public void setBankFactorPer(BigDecimal bankFactorPer) {
-        this.bankFactorPer = bankFactorPer;
     }
 
     public String getRegistrySituationType() {
         return registrySituationType;
     }
 
-    public void setRegistrySituationType(String registrySituationType) {
-        this.registrySituationType = registrySituationType;
-    }
-
     public String getSourceBranchId() {
         return sourceBranchId;
-    }
-
-    public void setSourceBranchId(String sourceBranchId) {
-        this.sourceBranchId = sourceBranchId;
     }
 
     public String getCreationUserId() {
         return creationUserId;
     }
-
-    public void setCreationUserId(String creationUserId) {
-        this.creationUserId = creationUserId;
-    }
-
     public Date getCreationDate() {
         return creationDate;
-    }
-
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
     }
 
     public String getUserAuditId() {
         return userAuditId;
     }
 
-    public void setUserAuditId(String userAuditId) {
-        this.userAuditId = userAuditId;
-    }
-
     public Date getAuditDate() {
         return auditDate;
-    }
-
-    public void setAuditDate(Date auditDate) {
-        this.auditDate = auditDate;
     }
 
     public String getPersonalDocType() {
         return personalDocType;
     }
 
-    public void setPersonalDocType(String personalDocType) {
-        this.personalDocType = personalDocType;
-    }
-
     public String getParticipantPersonalId() {
         return participantPersonalId;
-    }
-
-    public void setParticipantPersonalId(String participantPersonalId) {
-        this.participantPersonalId = participantPersonalId;
     }
 
     public String getInsuredCustomerName() {
         return insuredCustomerName;
     }
 
-    public void setInsuredCustomerName(String insuredCustomerName) {
-        this.insuredCustomerName = insuredCustomerName;
-    }
-
     public String getClientLastName() {
         return clientLastName;
-    }
-
-    public void setClientLastName(String clientLastName) {
-        this.clientLastName = clientLastName;
     }
 
     public String getDataTreatmentIndType() {
         return dataTreatmentIndType;
     }
 
-    public void setDataTreatmentIndType(String dataTreatmentIndType) {
-        this.dataTreatmentIndType = dataTreatmentIndType;
-    }
 
     public String getCustomerSegmentName() {
         return customerSegmentName;
-    }
-
-    public void setCustomerSegmentName(String customerSegmentName) {
-        this.customerSegmentName = customerSegmentName;
     }
 
     @Override
