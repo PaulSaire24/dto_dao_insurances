@@ -1,5 +1,7 @@
 package com.bbva.pisd.dto.insurancedao.entities;
 
+import java.util.List;
+
 public class ContractEntity {
     private ContractEntity() {}
     /**
@@ -103,6 +105,9 @@ public class ContractEntity {
     private String  nonRenwCtrctSubReasonType;
     private String  originalPaymentSubChannelId;
     private String  processedRegisterType;
+    private List<ReceiptEntity> receipt;
+
+
 
     /**
      * Campos de OpenPay
@@ -126,6 +131,7 @@ public class ContractEntity {
     public String getAuditDate() {
         return auditDate;
     }
+    public List<ReceiptEntity> getReceipt() {return receipt;}
 
     public String getInsuranceContractEntityId() {
         return insuranceContractEntityId;
@@ -712,6 +718,10 @@ public class ContractEntity {
             contractEntity.paymentMeansType = paymentMeansType;
             return this;
         }
+        public ContractBuilder withReceipts(List<ReceiptEntity> receipts) {
+            contractEntity.receipt = receipts;
+            return this;
+        }
 
 
         public ContractEntity build() {
@@ -793,9 +803,11 @@ public class ContractEntity {
                 ", nonRenwCtrctSubReasonType='" + nonRenwCtrctSubReasonType + '\'' +
                 ", originalPaymentSubChannelId='" + originalPaymentSubChannelId + '\'' +
                 ", processedRegisterType='" + processedRegisterType + '\'' +
+                ", receipt=" + receipt +
                 ", tokenSupplierId='" + tokenSupplierId + '\'' +
                 ", openpayCommerceTransDate='" + openpayCommerceTransDate + '\'' +
                 ", paymentMeansType='" + paymentMeansType + '\'' +
                 '}';
     }
+}
 }
