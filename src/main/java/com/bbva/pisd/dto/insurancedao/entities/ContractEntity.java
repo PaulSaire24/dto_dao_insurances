@@ -452,7 +452,7 @@ public class ContractEntity {
             contractEntity.insrcContractIntAccountId = insrcContractIntAccountId;
             return this;
         }
-        public ContractBuilder withInsrcPolicyQuotaInternalId(String policyQuotaInternalId) {
+        public ContractBuilder withPolicyQuotaInternalId(String policyQuotaInternalId) {
             contractEntity.policyQuotaInternalId = policyQuotaInternalId;
             return this;
         }
