@@ -688,7 +688,7 @@ public class ContractEntity {
             contractEntity.nonRenewedCtrctReasontype = nonRenewedCtrctReasontype;
             return this;
         }
-        public ContractBuilder withHonRenwCtrctSubReasonType(String nonRenwCtrctSubReasonType) {
+        public ContractBuilder withNonRenwCtrctSubReasonType(String nonRenwCtrctSubReasonType) {
             contractEntity.nonRenwCtrctSubReasonType = nonRenwCtrctSubReasonType;
             return this;
         }
