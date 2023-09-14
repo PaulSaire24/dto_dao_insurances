@@ -110,16 +110,6 @@ public class ContractEntity {
     private String  tokenSupplierId;
     private String openpayCommerceTransDate;
     private String paymentMeansType;
-    private String extTransactionId;
-    private String openpayCommerceId;
-
-    public String getExtTransactionId() {
-        return extTransactionId;
-    }
-
-    public String getOpenpayCommerceId() {
-        return openpayCommerceId;
-    }
 
     public String getCreationUserId() {
         return creationUserId;
@@ -722,14 +712,7 @@ public class ContractEntity {
             contractEntity.paymentMeansType = paymentMeansType;
             return this;
         }
-        public ContractBuilder withExtTransactionId(String extTransactionId) {
-            contractEntity.extTransactionId = extTransactionId;
-            return this;
-        }
-        public ContractBuilder withOpenpayCommerceId(String openpayCommerceId) {
-            contractEntity.openpayCommerceId = openpayCommerceId;
-            return this;
-        }
+
 
         public ContractEntity build() {
             return contractEntity;
@@ -738,7 +721,7 @@ public class ContractEntity {
 
     @Override
     public String toString() {
-        return "contractEntity{" +
+        return "ContractEntity{" +
                 "creationUserId='" + creationUserId + '\'' +
                 ", creationDate='" + creationDate + '\'' +
                 ", userAuditId='" + userAuditId + '\'' +
@@ -813,8 +796,6 @@ public class ContractEntity {
                 ", tokenSupplierId='" + tokenSupplierId + '\'' +
                 ", openpayCommerceTransDate='" + openpayCommerceTransDate + '\'' +
                 ", paymentMeansType='" + paymentMeansType + '\'' +
-                ", extTransactionId='" + extTransactionId + '\'' +
-                ", openpayCommerceId='" + openpayCommerceId + '\'' +
                 '}';
     }
 }
