@@ -2,7 +2,12 @@ package com.bbva.pisd.dto.insurancedao.constants;
 
 public class PISDColumn {
 
+    private PISDColumn() {
+    }
+
     public final class Contract{
+        private Contract() {
+        }
 
         public static final String FIELD_INSURANCE_CONTRACT_ENTITY_ID   = "INSURANCE_CONTRACT_ENTITY_ID";
         public static final String FIELD_INSURANCE_CONTRACT_BRANCH_ID   = "INSURANCE_CONTRACT_BRANCH_ID";
@@ -81,6 +86,10 @@ public class PISDColumn {
     }
 
     public final class Receipt{
+
+        private Receipt() {
+        }
+
         public static final String FIELD_INSURANCE_CONTRACT_ENTITY_ID = "INSURANCE_CONTRACT_ENTITY_ID";
         public static final String FIELD_INSURANCE_CONTRACT_BRANCH_ID = "INSURANCE_CONTRACT_BRANCH_ID";
         public static final String FIELD_INSRC_CONTRACT_INT_ACCOUNT_ID = "INSRC_CONTRACT_INT_ACCOUNT_ID";
