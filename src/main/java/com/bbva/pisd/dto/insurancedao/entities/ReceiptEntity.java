@@ -538,4 +538,63 @@ public class ReceiptEntity {
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "ReceiptEntity{" +
+                "contract=" + contract +
+                ", insuranceContractEntityId='" + insuranceContractEntityId + '\'' +
+                ", insuranceContractBranchId='" + insuranceContractBranchId + '\'' +
+                ", insrcContractIntAccountId='" + insrcContractIntAccountId + '\'' +
+                ", policyReceiptId=" + policyReceiptId +
+                ", insuranceCompanyId=" + insuranceCompanyId +
+                ", insuranceCompanyReceiptId='" + insuranceCompanyReceiptId + '\'' +
+                ", premiumPaymentReceiptAmount=" + premiumPaymentReceiptAmount +
+                ", fixingExchangeRateAmount=" + fixingExchangeRateAmount +
+                ", premiumCurrencyExchAmount=" + premiumCurrencyExchAmount +
+                ", chargedNetAmount=" + chargedNetAmount +
+                ", deferredQuotaAmount=" + deferredQuotaAmount +
+                ", referenceNumberTransDesc='" + referenceNumberTransDesc + '\'' +
+                ", premiumChargeOperationId=" + premiumChargeOperationId +
+                ", currencyId='" + currencyId + '\'' +
+                ", receiptIssueDate='" + receiptIssueDate + '\'' +
+                ", receiptStartDate='" + receiptStartDate + '\'' +
+                ", receiptEndDate='" + receiptEndDate + '\'' +
+                ", receiptCollectionDate='" + receiptCollectionDate + '\'' +
+                ", receiptExpirationDate='" + receiptExpirationDate + '\'' +
+                ", receiptsTransmissionDate='" + receiptsTransmissionDate + '\'' +
+                ", receiptCancellationDate='" + receiptCancellationDate + '\'' +
+                ", receiptCollectionStatusType='" + receiptCollectionStatusType + '\'' +
+                ", writeoffPaymentMarkType='" + writeoffPaymentMarkType + '\'' +
+                ", insuranceCollectionMoveId='" + insuranceCollectionMoveId + '\'' +
+                ", paymentMethodType='" + paymentMethodType + '\'' +
+                ", debitAccountId='" + debitAccountId + '\'' +
+                ", debitChannelType='" + debitChannelType + '\'' +
+                ", chargeAttemptsNumber=" + chargeAttemptsNumber +
+                ", insrncCoReceiptStatusType='" + insrncCoReceiptStatusType + '\'' +
+                ", receiptStatusType='" + receiptStatusType + '\'' +
+                ", creationUserId='" + creationUserId + '\'' +
+                ", creationDate='" + creationDate + '\'' +
+                ", userAuditId='" + userAuditId + '\'' +
+                ", auditDate='" + auditDate + '\'' +
+                ", receiptPymtRefundIndType='" + receiptPymtRefundIndType + '\'' +
+                ", managementBranchId='" + managementBranchId + '\'' +
+                ", variablePremiumAmount=" + variablePremiumAmount +
+                ", fixPremiumAmount=" + fixPremiumAmount +
+                ", settlementVarPremiumAmount=" + settlementVarPremiumAmount +
+                ", settlementFixPremiumAmount=" + settlementFixPremiumAmount +
+                ", lastChangeBranchId='" + lastChangeBranchId + '\'' +
+                ", retentionTrackingId='" + retentionTrackingId + '\'' +
+                ", paymentNotificationId='" + paymentNotificationId + '\'' +
+                ", paymentNotificationMsgDesc='" + paymentNotificationMsgDesc + '\'' +
+                ", glBranchId='" + glBranchId + '\'' +
+                ", fixedAmount=" + fixedAmount +
+                ", variableAmount=" + variableAmount +
+                ", wasCommitted=" + wasCommitted +
+                ", isMissing=" + isMissing +
+                ", renewalReceiptSeqNumber=" + renewalReceiptSeqNumber +
+                ", renewalNumber=" + renewalNumber +
+                ", transactionCollectId='" + transactionCollectId + '\'' +
+                '}';
+    }
 }
