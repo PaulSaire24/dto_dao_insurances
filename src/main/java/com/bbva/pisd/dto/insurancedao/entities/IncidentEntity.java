@@ -129,7 +129,7 @@ public class IncidentEntity {
             this.incident.authOriginCurncyId=authOriginCurncyId;
             return this;
         }
-        public IncidentBuilder withAperationAdditionalAmount(Double operationAdditionalAmount){
+        public IncidentBuilder withOperationAdditionalAmount(Double operationAdditionalAmount){
             this.incident.operationAdditionalAmount=operationAdditionalAmount;
             return this;
         }
@@ -153,7 +153,7 @@ public class IncidentEntity {
             this.incident.creationDate=creationDate;
             return this;
         }
-        public IncidentBuilder withIncidenceCreationUserId(String creationUserId){
+        public IncidentBuilder withCreationUserId(String creationUserId){
             this.incident.creationUserId=creationUserId;
             return this;
         }
