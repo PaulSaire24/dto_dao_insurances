@@ -55,6 +55,10 @@ public class ReceiptEntity {
     private Integer renewalReceiptSeqNumber;
     private Integer renewalNumber;
     private String transactionCollectId;
+    private String commerceSendDate;
+    private String commerceReceiptStatusType;
+
+
 
     public ContractEntity getContract() {
         return contract;
@@ -478,6 +482,22 @@ public class ReceiptEntity {
 
     public void setTransactionCollectId(String transactionCollectId) {
         this.transactionCollectId = transactionCollectId;
+    }
+
+    public String getCommerceSendDate() {
+        return commerceSendDate;
+    }
+
+    public void setCommerceSendDate(String commerceSendDate) {
+        this.commerceSendDate = commerceSendDate;
+    }
+
+    public String getCommerceReceiptStatusType() {
+        return commerceReceiptStatusType;
+    }
+
+    public void setCommerceReceiptStatusType(String commerceReceiptStatusType) {
+        this.commerceReceiptStatusType = commerceReceiptStatusType;
     }
 
     public static final class Builder {

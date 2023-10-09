@@ -98,7 +98,9 @@ public class PISDColumn {
         public static final String FIELD_PREMIUM_PAYMENT_RECEIPT_AMOUNT = "PREMIUM_PAYMENT_RECEIPT_AMOUNT";
         public static final String FIELD_CURRENCY_ID = "CURRENCY_ID";
         public static final String FIELD_RECEIPT_STATUS_TYPE = "RECEIPT_STATUS_TYPE";
-
+        public static final String FIELD_COMMERCE_SEND_OPENPAY_DATE = "COMMERCE_SEND_OPENPAY_DATE";
+        public static final String FIELD_OPENPAY_RECEIPT_STATUS_TYPE = "OPENPAY_RECEIPT_STATUS_TYPE";
+        public static final String FIELD_USER_AUDIT_ID = "USER_AUDIT_ID";
     }
 
 }
