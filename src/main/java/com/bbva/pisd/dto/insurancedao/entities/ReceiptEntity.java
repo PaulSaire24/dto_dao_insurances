@@ -552,6 +552,59 @@ public class ReceiptEntity {
             this.receiptDTO.setReceiptStatusType(receiptStatusType);
             return this;
         }
+        public Builder withReceiptCollectionStatusType(String receiptCollectionStatusType) {
+            this.receiptDTO.setReceiptCollectionStatusType(receiptCollectionStatusType);
+            return this;
+        }
+        public Builder withFixingExchangeRateAmount(Double fixingExchangeRateAmount) {
+            this.receiptDTO.setFixingExchangeRateAmount(fixingExchangeRateAmount);
+            return this;
+        }
+        public Builder withPremiumCurrencyExchAmount(Double premiumCurrencyExchAmount) {
+            this.receiptDTO.setPremiumCurrencyExchAmount(premiumCurrencyExchAmount);
+            return this;
+        }
+        public Builder withPremiumChargeOperationId(Long premiumChargeOperationId) {
+            this.receiptDTO.setPremiumChargeOperationId(premiumChargeOperationId);
+            return this;
+        }
+        public Builder withDebitAccountId(String debitAccountId) {
+            this.receiptDTO.setDebitAccountId(debitAccountId);
+            return this;
+        }
+        public Builder withChargeAttemptsNumber(Integer chargeAttemptsNumber) {
+            this.receiptDTO.setChargeAttemptsNumber(chargeAttemptsNumber);
+            return this;
+        }
+        public Builder withReceiptsTransmissionDate(String receiptsTransmissionDate) {
+            this.receiptDTO.setReceiptsTransmissionDate(receiptsTransmissionDate);
+            return this;
+        }
+        public Builder withRetentionTrackingId(String retentionTrackingId) {
+            this.receiptDTO.setRetentionTrackingId(retentionTrackingId);
+            return this;
+        }
+        public Builder withManagementBranchId(String managementBranchId) {
+            this.receiptDTO.setManagementBranchId(managementBranchId);
+            return this;
+        }
+        public Builder withPaymentNotificationId(String paymentNotificationId) {
+            this.receiptDTO.setPaymentNotificationId(paymentNotificationId);
+            return this;
+        }
+        public Builder withPaymentNotificationMsgDesc(String paymentNotificationMsgDesc) {
+            this.receiptDTO.setPaymentNotificationMsgDesc(paymentNotificationMsgDesc);
+            return this;
+        }
+        public Builder withUserAuditId(String userAuditId) {
+            this.receiptDTO.setUserAuditId(userAuditId);
+            return this;
+        }
+        public Builder withAuditDate(String auditDate) {
+            this.receiptDTO.setAuditDate(auditDate);
+            return this;
+        }
+
 
         public ReceiptEntity build() {
             return this.receiptDTO;
