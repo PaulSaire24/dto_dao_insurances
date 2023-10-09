@@ -12,6 +12,7 @@ public class PISDConstant {
     }
     public static final class Numeros {
         public static final int CERO = 0;
+        public static final int UNO = 1;
 
     }
 }
