@@ -112,7 +112,7 @@ public class ContractEntity {
     /**
      * Campos de OpenPay
      */
-    private String  tokenSupplierId;
+    private String cardTokenizedId;
     private String openpayCommerceTransDate;
     private String paymentMeansType;
 
@@ -401,8 +401,8 @@ public class ContractEntity {
         return processedRegisterType;
     }
 
-    public String getTokenSupplierId() {
-        return tokenSupplierId;
+    public String getCardTokenizedId() {
+        return cardTokenizedId;
     }
 
     public String getOpenpayCommerceTransDate() {
@@ -706,8 +706,8 @@ public class ContractEntity {
             contractEntity.processedRegisterType = processedRegisterType;
             return this;
         }
-        public ContractBuilder withTokenSupplierId(String tokenSupplierId) {
-            contractEntity.tokenSupplierId = tokenSupplierId;
+        public ContractBuilder withCardTokenizedId(String cardTokenizedId) {
+            contractEntity.cardTokenizedId = cardTokenizedId;
             return this;
         }
         public ContractBuilder withOpenpayCommerceTransDate(String openpayCommerceTransDate) {
@@ -804,7 +804,7 @@ public class ContractEntity {
                 ", originalPaymentSubChannelId='" + originalPaymentSubChannelId + '\'' +
                 ", processedRegisterType='" + processedRegisterType + '\'' +
                 ", receipt=" + receipt +
-                ", tokenSupplierId='" + tokenSupplierId + '\'' +
+                ", cardTokenizedId='" + cardTokenizedId + '\'' +
                 ", openpayCommerceTransDate='" + openpayCommerceTransDate + '\'' +
                 ", paymentMeansType='" + paymentMeansType + '\'' +
                 '}';
