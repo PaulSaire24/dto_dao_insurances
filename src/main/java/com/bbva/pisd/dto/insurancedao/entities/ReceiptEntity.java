@@ -55,7 +55,7 @@ public class ReceiptEntity {
     private Integer renewalReceiptSeqNumber;
     private Integer renewalNumber;
     private String transactionCollectId;
-    private String commerceSendDate;
+    private String chargeFileSendDate;
     private String commerceReceiptStatusType;
 
 
@@ -484,12 +484,12 @@ public class ReceiptEntity {
         this.transactionCollectId = transactionCollectId;
     }
 
-    public String getCommerceSendDate() {
-        return commerceSendDate;
+    public String getChargeFileSendDate() {
+        return chargeFileSendDate;
     }
 
-    public void setCommerceSendDate(String commerceSendDate) {
-        this.commerceSendDate = commerceSendDate;
+    public void setChargeFileSendDate(String chargeFileSendDate) {
+        this.chargeFileSendDate = chargeFileSendDate;
     }
 
     public String getCommerceReceiptStatusType() {
