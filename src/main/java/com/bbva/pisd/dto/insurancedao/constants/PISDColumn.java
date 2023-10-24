@@ -100,6 +100,15 @@ public class PISDColumn {
         public static final String FIELD_RECEIPT_STATUS_TYPE = "RECEIPT_STATUS_TYPE";
         public static final String FIELD_CHARGE_FILE_SEND_DATE = "CHARGE_FILE_SEND_DATE";
         public static final String FIELD_COMMERCE_RECEIPT_STATUS_TYPE = "COMMERCE_RECEIPT_STATUS_TYPE";
+        public static final String FIELD_RECEIPT_COLLECTION_STATUS_TYPE="RECEIPT_COLLECTION_STATUS_TYPE";
+        public static final String FIELD_FIXING_EXCHANGE_RATE_AMOUNT="FIXING_EXCHANGE_RATE_AMOUNT";
+        public static final String FIELD_PREMIUM_CURRENCY_EXCH_AMOUNT="PREMIUM_CURRENCY_EXCH_AMOUNT";
+        public static final String FIELD_PREMIUM_CHARGE_OPERATION_ID="PREMIUM_CHARGE_OPERATION_ID";
+        public static final String FIELD_DEBIT_ACCOUNT_ID="DEBIT_ACCOUNT_ID";
+        public static final String FIELD_CHARGE_ATTEMPTS_NUMBER="CHARGE_ATTEMPTS_NUMBER";
+        public static final String FIELD_RECEIPTS_TRANSMISSION_DATE="RECEIPTS_TRANSMISSION_DATE";
+        public static final String FIELD_PAYMENT_NOTIFICATION_ID="PAYMENT_NOTIFICATION_ID";
+        public static final String FIELD_PAYMENT_NOTIFICATION_MSG_DESC="PAYMENT_NOTIFICATION_MSG_DESC";
         public static final String FIELD_USER_AUDIT_ID = "USER_AUDIT_ID";
     }
 
