@@ -11,6 +11,7 @@ public class Operation {
     private Map<String, Object>[] batchValues;
     private String typeOperation;
     private boolean isForListQuery;
+    private boolean isContainsParameters;
 
     public String getTable() {
         return table;
@@ -68,9 +69,17 @@ public class Operation {
         isForListQuery = forListQuery;
     }
 
+    public boolean isContainsParameters() {
+        return this.isContainsParameters;
+    }
+
+    public void setContainsParameters(boolean containsParameters) {
+        this.isContainsParameters = containsParameters;
+    }
+
     @Override
     public String toString() {
-        return "OperationDTO{" +
+        return "Operation{" +
                 "table='" + table + '\'' +
                 ", query='" + query + '\'' +
                 ", nameProp='" + nameProp + '\'' +
@@ -78,6 +87,7 @@ public class Operation {
                 ", batchValues=" + Arrays.toString(batchValues) +
                 ", typeOperation='" + typeOperation + '\'' +
                 ", isForListQuery=" + isForListQuery +
+                ", isContainsParameters=" + isContainsParameters +
                 '}';
     }
 
@@ -122,6 +132,10 @@ public class Operation {
 
         public Builder withIsForListQuery(boolean isForListQuery) {
             operationDTO.setForListQuery(isForListQuery);
+            return this;
+        }
+        public Builder withIsContainsParameters(boolean isContainsParameters) {
+            this.operationDTO.setContainsParameters(isContainsParameters);
             return this;
         }
 
