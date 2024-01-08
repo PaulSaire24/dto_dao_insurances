@@ -1,5 +1,7 @@
 package com.bbva.pisd.dto.insurancedao.entities;
 
+import java.util.Date;
+
 public class QuotationEntity {
 
     /**
@@ -10,9 +12,9 @@ public class QuotationEntity {
      * @auditDate
      */
     private String creationUserId;
-    private String creationDate;
+    private Date creationDate;
     private String userAuditId;
-    private String auditDate;
+    private Date auditDate;
     private String policyQuotaInternalId;
     private String  insuranceSimulationId;
     private String insuranceCompanyQuotaId;
@@ -25,9 +27,11 @@ public class QuotationEntity {
     private String sourceBranchId;
     private String personalDocType;
     private String participantPersonalId;
-    private String policyQuotaCancellationDate;
+    private Date policyQuotaCancellationDate;
     private String insuredCustomerName;
     private String clientLasName;
+    private String issuedReceiptNumber;
+    private String lastFourPanId;
 
     public String getCreationUserId() {
         return creationUserId;
@@ -37,11 +41,11 @@ public class QuotationEntity {
         this.creationUserId = creationUserId;
     }
 
-    public String getCreationDate() {
+    public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(String creationDate) {
+    public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -53,11 +57,11 @@ public class QuotationEntity {
         this.userAuditId = userAuditId;
     }
 
-    public String getAuditDate() {
+    public Date getAuditDate() {
         return auditDate;
     }
 
-    public void setAuditDate(String auditDate) {
+    public void setAuditDate(Date auditDate) {
         this.auditDate = auditDate;
     }
 
@@ -157,11 +161,11 @@ public class QuotationEntity {
         this.participantPersonalId = participantPersonalId;
     }
 
-    public String getPolicyQuotaCancellationDate() {
+    public Date getPolicyQuotaCancellationDate() {
         return policyQuotaCancellationDate;
     }
 
-    public void setPolicyQuotaCancellationDate(String policyQuotaCancellationDate) {
+    public void setPolicyQuotaCancellationDate(Date policyQuotaCancellationDate) {
         this.policyQuotaCancellationDate = policyQuotaCancellationDate;
     }
 
@@ -181,28 +185,47 @@ public class QuotationEntity {
         this.clientLasName = clientLasName;
     }
 
+    public String getIssuedReceiptNumber() {
+        return issuedReceiptNumber;
+    }
+
+    public void setIssuedReceiptNumber(String issuedReceiptNumber) {
+        this.issuedReceiptNumber = issuedReceiptNumber;
+    }
+
+    public String getLastFourPanId() {
+        return lastFourPanId;
+    }
+
+    public void setLastFourPanId(String lastFourPanId) {
+        this.lastFourPanId = lastFourPanId;
+    }
+
     @Override
     public String toString() {
-        return "QuotationEntity{" +
-                "creationUserId='" + creationUserId + '\'' +
-                ", creationDate='" + creationDate + '\'' +
-                ", userAuditId='" + userAuditId + '\'' +
-                ", auditDate='" + auditDate + '\'' +
-                ", policyQuotaInternalId='" + policyQuotaInternalId + '\'' +
-                ", insuranceSimulationId='" + insuranceSimulationId + '\'' +
-                ", insuranceCompanyQuotaId='" + insuranceCompanyQuotaId + '\'' +
-                ", quoteDate='" + quoteDate + '\'' +
-                ", quotaHmsDate='" + quotaHmsDate + '\'' +
-                ", policyQuotaEndValidityDate='" + policyQuotaEndValidityDate + '\'' +
-                ", customerId='" + customerId + '\'' +
-                ", policyQuotaStatusType='" + policyQuotaStatusType + '\'' +
-                ", lastChangeBranchId='" + lastChangeBranchId + '\'' +
-                ", sourceBranchId='" + sourceBranchId + '\'' +
-                ", personalDocType='" + personalDocType + '\'' +
-                ", participantPersonalId='" + participantPersonalId + '\'' +
-                ", policyQuotaCancellationDate='" + policyQuotaCancellationDate + '\'' +
-                ", insuredCustomerName='" + insuredCustomerName + '\'' +
-                ", clientLasName='" + clientLasName + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("QuotationEntity{");
+        sb.append("creationUserId='").append(creationUserId).append('\'');
+        sb.append(", creationDate=").append(creationDate);
+        sb.append(", userAuditId='").append(userAuditId).append('\'');
+        sb.append(", auditDate=").append(auditDate);
+        sb.append(", policyQuotaInternalId='").append(policyQuotaInternalId).append('\'');
+        sb.append(", insuranceSimulationId='").append(insuranceSimulationId).append('\'');
+        sb.append(", insuranceCompanyQuotaId='").append(insuranceCompanyQuotaId).append('\'');
+        sb.append(", quoteDate=").append(quoteDate);
+        sb.append(", quotaHmsDate='").append(quotaHmsDate).append('\'');
+        sb.append(", policyQuotaEndValidityDate='").append(policyQuotaEndValidityDate).append('\'');
+        sb.append(", customerId='").append(customerId).append('\'');
+        sb.append(", policyQuotaStatusType='").append(policyQuotaStatusType).append('\'');
+        sb.append(", lastChangeBranchId='").append(lastChangeBranchId).append('\'');
+        sb.append(", sourceBranchId='").append(sourceBranchId).append('\'');
+        sb.append(", personalDocType='").append(personalDocType).append('\'');
+        sb.append(", participantPersonalId='").append(participantPersonalId).append('\'');
+        sb.append(", policyQuotaCancellationDate=").append(policyQuotaCancellationDate);
+        sb.append(", insuredCustomerName='").append(insuredCustomerName).append('\'');
+        sb.append(", clientLasName='").append(clientLasName).append('\'');
+        sb.append(", issuedReceiptNumber='").append(issuedReceiptNumber).append('\'');
+        sb.append(", lastFourPanId='").append(lastFourPanId).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
