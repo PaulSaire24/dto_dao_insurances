@@ -565,6 +565,14 @@ public class ReceiptEntity {
             return this;
         }
 
+        public Builder withReceiptStartDate(String startDate) {
+            this.receiptDTO.setReceiptStartDate(startDate);
+            return this;
+        }
+        public Builder withReceiptEndDate(String endDate) {
+            this.receiptDTO.setReceiptEndDate(endDate);
+            return this;
+        }
         public Builder withReceiptStatusType(String receiptStatusType) {
             this.receiptDTO.setReceiptStatusType(receiptStatusType);
             return this;

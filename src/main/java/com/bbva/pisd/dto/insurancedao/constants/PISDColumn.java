@@ -16,6 +16,7 @@ public class PISDColumn {
         public static final String FIELD_CONTRACT_SECOND_VERFN_DIGIT_ID         = "CONTRACT_SECOND_VERFN_DIGIT_ID";
         public static final String FIELD_POLICY_QUOTA_INTERNAL_ID               = "POLICY_QUOTA_INTERNAL_ID";
         public static final String FIELD_INSURANCE_PRODUCT_ID                   = "INSURANCE_PRODUCT_ID";
+        public static final String FIELD_INSURANCE_PRODUCT_NAME                  = "INSURANCE_PRODUCT_NAME";
         public static final String FIELD_INSURANCE_MODALITY_TYPE                = "INSURANCE_MODALITY_TYPE";
         public static final String FIELD_INSURANCE_COMPANY_ID                   = "INSURANCE_COMPANY_ID";
         public static final String FIELD_POLICY_ID                              = "POLICY_ID";
@@ -110,6 +111,8 @@ public class PISDColumn {
         public static final String FIELD_PAYMENT_NOTIFICATION_ID="PAYMENT_NOTIFICATION_ID";
         public static final String FIELD_PAYMENT_NOTIFICATION_MSG_DESC="PAYMENT_NOTIFICATION_MSG_DESC";
         public static final String FIELD_USER_AUDIT_ID = "USER_AUDIT_ID";
+        public static final String FIELD_RECEIPT_START_DATE = "RECEIPT_START_DATE";
+        public static final String FIELD_RECEIPT_END_DATE = "RECEIPT_END_DATE";
     }
 
     public final class Incident{
