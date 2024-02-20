@@ -58,7 +58,24 @@ public class ReceiptEntity {
     private String chargeFileSendDate;
     private String commerceReceiptStatusType;
 
+    private String insuranceProductName;
+    private String operationGlossaryDesc;
 
+    public String getOperationGlossaryDesc() {
+        return operationGlossaryDesc;
+    }
+
+    public void setOperationGlossaryDesc(String operationGlossaryDesc) {
+        this.operationGlossaryDesc = operationGlossaryDesc;
+    }
+
+    public String getInsuranceProductName() {
+        return insuranceProductName;
+    }
+
+    public void setInsuranceProductName(String insuranceProductName) {
+        this.insuranceProductName = insuranceProductName;
+    }
 
     public ContractEntity getContract() {
         return contract;
@@ -548,6 +565,14 @@ public class ReceiptEntity {
             return this;
         }
 
+        public Builder withReceiptStartDate(String startDate) {
+            this.receiptDTO.setReceiptStartDate(startDate);
+            return this;
+        }
+        public Builder withReceiptEndDate(String endDate) {
+            this.receiptDTO.setReceiptEndDate(endDate);
+            return this;
+        }
         public Builder withReceiptStatusType(String receiptStatusType) {
             this.receiptDTO.setReceiptStatusType(receiptStatusType);
             return this;
@@ -596,12 +621,20 @@ public class ReceiptEntity {
             this.receiptDTO.setPaymentNotificationMsgDesc(paymentNotificationMsgDesc);
             return this;
         }
+        public Builder withInsuranceProductName(String insuranceProductName) {
+            this.receiptDTO.setInsuranceProductName(insuranceProductName);
+            return this;
+        }
         public Builder withUserAuditId(String userAuditId) {
             this.receiptDTO.setUserAuditId(userAuditId);
             return this;
         }
         public Builder withAuditDate(String auditDate) {
             this.receiptDTO.setAuditDate(auditDate);
+            return this;
+        }
+        public Builder withOperationGlossaryDesc(String glosa) {
+            this.receiptDTO.setOperationGlossaryDesc(glosa);
             return this;
         }
 

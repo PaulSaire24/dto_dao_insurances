@@ -44,6 +44,7 @@ public class ContractEntity {
      * Propiedades sobre producto
      */
     private String insuranceProductId;
+    private String insuranceProductName;
 
 
     private String insuranceModalityType;
@@ -365,6 +366,10 @@ public class ContractEntity {
         return saleChannelId;
     }
 
+    public String getInsuranceProductName() {
+        return insuranceProductName;
+    }
+
     public String getContractRenewalStatusType() {
         return contractRenewalStatusType;
     }
@@ -488,6 +493,10 @@ public class ContractEntity {
         }
         public ContractBuilder withInsuranceProductId(String insuranceProductId) {
             contractEntity.insuranceProductId = insuranceProductId;
+            return this;
+        }
+        public ContractBuilder withInsuranceProductName(String insuranceProductName) {
+            contractEntity.insuranceProductName = insuranceProductName;
             return this;
         }
         public ContractBuilder withInsuranceModalityType(String insuranceModalityType) {
@@ -749,6 +758,7 @@ public class ContractEntity {
                 ", policyDiscountCouponId='" + policyDiscountCouponId + '\'' +
                 ", endorsementPolicyIndType='" + endorsementPolicyIndType + '\'' +
                 ", insuranceProductId='" + insuranceProductId + '\'' +
+                ", insuranceProductName='" + insuranceProductName + '\'' +
                 ", insuranceModalityType='" + insuranceModalityType + '\'' +
                 ", insuranceCompanyId='" + insuranceCompanyId + '\'' +
                 ", insuranceManagerId='" + insuranceManagerId + '\'' +
