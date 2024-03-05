@@ -32,6 +32,8 @@ public class QuotationEntity {
     private String clientLasName;
     private String issuedReceiptNumber;
     private String lastFourPanId;
+    private String rfqInternalId;
+
 
     public String getCreationUserId() {
         return creationUserId;
@@ -201,6 +203,14 @@ public class QuotationEntity {
         this.lastFourPanId = lastFourPanId;
     }
 
+    public String getRfqInternalId() {
+        return rfqInternalId;
+    }
+
+    public void setRfqInternalId(String rfqInternalId) {
+        this.rfqInternalId = rfqInternalId;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("QuotationEntity{");
@@ -225,6 +235,7 @@ public class QuotationEntity {
         sb.append(", clientLasName='").append(clientLasName).append('\'');
         sb.append(", issuedReceiptNumber='").append(issuedReceiptNumber).append('\'');
         sb.append(", lastFourPanId='").append(lastFourPanId).append('\'');
+        sb.append(", rfqInternalId=").append(rfqInternalId).append('\'');
         sb.append('}');
         return sb.toString();
     }
