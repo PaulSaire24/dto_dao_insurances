@@ -5,7 +5,7 @@ import com.bbva.pisd.dto.insurancedao.entities.InsuranceProductEntity;
 import com.bbva.pisd.dto.insurancedao.entities.QuotationEntity;
 import com.bbva.pisd.dto.insurancedao.entities.QuotationModEntity;
 
-public class QuotationJoinCustomerInformationDTO {
+public class QuotationCustomerDTO {
     private QuotationEntity quotation;
     private QuotationModEntity quotationMod;
     private InsuranceProductEntity insuranceProduct;
