@@ -86,6 +86,41 @@ public class PISDColumn {
         public static final String FIELD_PAYMENT_MEANS_TYPE                     = "PAYMENT_MEANS_TYPE";
     }
 
+    public static final class QuotationMod{
+
+        private QuotationMod(){}
+
+        public static final String FIELD_INSURANCE_MODALITY_TYPE = "INSURANCE_MODALITY_TYPE";
+        public static final String FIELD_CONTACT_EMAIL_DESC = "CONTACT_EMAIL_DESC";
+        public static final String FIELD_CUSTOMER_PHONE_DESC = "CUSTOMER_PHONE_DESC";
+    }
+
+    public static final class Quotation{
+        private Quotation(){}
+
+        public static final String FIELD_QUOTE_DATE = "QUOTE_DATE";
+        public static final String FIELD_USER_AUDIT_ID = "USER_AUDIT_ID";
+        public static final String FIELD_CUSTOMER_ID = "CUSTOMER_ID";
+        public static final String FIELD_POLICY_QUOTA_STATUS_TYPE = "POLICY_QUOTA_STATUS_TYPE";
+        public static final String FIELD_PERSONAL_DOC_TYPE = "PERSONAL_DOC_TYPE";
+        public static final String FIELD_PARTICIPANT_PERSONAL_ID = "PARTICIPANT_PERSONAL_ID";
+        public static final String FIELD_RFQ_INTERNAL_ID = "RFQ_INTERNAL_ID";
+    }
+
+    public static final class Modality{
+        private Modality(){}
+
+        public static final String FIELD_INSURANCE_COMPANY_MODALITY_ID = "INSURANCE_COMPANY_MODALITY_ID";
+        public static final String FIELD_INSUR_MODALITY_DESC = "INSUR_MODALITY_DESC";
+        public static final String FIELD_INSURANCE_MODALITY_NAME = "INSURANCE_MODALITY_NAME";
+    }
+
+    public static final class Product{
+        private Product(){}
+
+        public static final String FIELD_INSURANCE_PRODUCT_TYPE = "INSURANCE_PRODUCT_TYPE";
+    }
+
     public final class Receipt{
 
         private Receipt() {
