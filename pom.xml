@@ -19,7 +19,8 @@
 			/src/main/java/com/bbva/pisd/dto/insurancedao/operation/**.java,
 			/src/main/java/com/bbva/pisd/dto/insurancedao/constants/**.java,
 			/src/main/java/com/bbva/pisd/dto/insurancedao/process/**.java,
-			/src/main/java/com/bbva/pisd/dto/insurancedao/join/**.java
+			/src/main/java/com/bbva/pisd/dto/insurancedao/join/**.java,
+			/src/main/java/com/bbva/pisd/dto/insurancedao/query/**.java
 		</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
